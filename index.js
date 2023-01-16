@@ -13,7 +13,7 @@ app.use(morgan('dev'))
 app.use(express.json());
 
 // Routes
-app.use('/api', (req, res) => {
+app.get('/api', (req, res) => {
     console.log(req);
     res.send(req.body)
 })
